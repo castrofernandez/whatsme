@@ -51,6 +51,8 @@ export {
   isRegExp,
   isDate,
   isObject,
+  isNotNull,
+  isBoolean,
   validators,
   exposedMethods,
 };

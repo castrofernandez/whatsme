@@ -1,7 +1,8 @@
 'use strict';
 
 import {
-  isNull,
+  isNotNull,
+  isBoolean,
   isUndefined,
   isFalse,
   isArray,
@@ -9,10 +10,8 @@ import {
   isNaN,
 } from './is.type';
 
-const isNotNull = (obj) => !isNull(obj);
 const isDefined = (obj) => !isUndefined(obj);
 const isSomething = (obj) => isNotNull(obj) && isDefined(obj);
-const isBoolean = (obj) => typeof obj === 'boolean';
 const isTruthy = (obj) => !isFalsy(obj);
 const isFalsy = (obj) => isFalse(obj) || !isSomething(obj)
   || isNaN(obj) || obj === 0 || obj === '';
