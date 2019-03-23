@@ -14,6 +14,7 @@ describe('whats', function() {
     expect(whatsme.whats({})).to.equal('object');
     expect(whatsme.whats(3)).to.equal('number');
     expect(whatsme.whats([])).to.equal('array');
+    expect(whatsme.whats([3])).to.equal('array');
     expect(whatsme.whats(null)).to.equal('null');
     expect(whatsme.whats(NaN)).to.equal('NaN');
     expect(whatsme.whats(Symbol())).to.equal('symbol');
