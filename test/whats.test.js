@@ -7,8 +7,8 @@ describe('whats', function() {
   it('whats', async function() {
     let something;
     expect(whatsme.whats(undefined)).to.equal('undefined');
-    expect(whatsme.whats(false)).to.equal('false');
-    expect(whatsme.whats(true)).to.equal('true');
+    expect(whatsme.whats(false)).to.equal('boolean');
+    expect(whatsme.whats(true)).to.equal('boolean');
     expect(whatsme.whats('')).to.equal('string');
     expect(whatsme.whats(something)).to.equal('undefined');
     expect(whatsme.whats({})).to.equal('object');

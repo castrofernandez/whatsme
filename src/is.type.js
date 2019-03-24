@@ -28,15 +28,26 @@ const validators = [
   {name: 'isString', check: isString, type: 'string'},
   {name: 'isNumber', check: isNumber, type: 'number'},
   {name: 'isNaN', check: isNaN, type: 'NaN'},
-  {name: 'isTrue', check: isTrue, type: 'true'},
-  {name: 'isFalse', check: isFalse, type: 'false'},
+  {name: 'isBoolean', check: isBoolean, type: 'boolean'},
   {name: 'isRegExp', check: isRegExp, type: 'RegExp'},
   {name: 'isDate', check: isDate, type: 'Date'},
   {name: 'isObject', check: isObject, type: 'object'},
 ];
 
-const exposedMethods = validators
-    .reduce((result, {name, check}) => ({...result, [name]: check}), {});
+const exposedMethods = {
+  isNull,
+  isUndefined,
+  isSymbol,
+  isArray,
+  isString,
+  isNumber,
+  isNaN,
+  isTrue,
+  isFalse,
+  isRegExp,
+  isDate,
+  isObject,
+};
 
 export {
   isNull,
