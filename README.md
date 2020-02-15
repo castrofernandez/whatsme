@@ -46,6 +46,7 @@ npm test
 * isRegExp(variable): checks if variable is a regular expression.
 * isDate(variable): checks if variable is an instance of Date.
 * isObject(variable): checks if variable is a plain object.
+* isFunction(variable): checks if variable is a function.
 * isNotNull(variable): checks if variable is not null.
 * isDefined(variable): checks if variable is not undefined.
 * isSomething(variable): checks if variable is defined (not null and not undefined).
@@ -67,3 +68,4 @@ npm test
   * RegExp
   * Date
   * object
+  * function
