@@ -12,6 +12,7 @@ const isFalse = (obj) => isBoolean(obj) && obj === false;
 const isRegExp = (obj) => obj instanceof RegExp;
 const isDate = (obj) => comparePrototype(obj, '[object Date]');
 const isObject = (obj) => isNotNull(obj) && typeof obj === 'object';
+const isFunction = (obj) => comparePrototype(obj, '[object Function]');
 
 /* Aux */
 const isBoolean = (obj) => typeof obj === 'boolean';
@@ -32,6 +33,7 @@ const validators = [
   {name: 'isRegExp', check: isRegExp, type: 'RegExp'},
   {name: 'isDate', check: isDate, type: 'Date'},
   {name: 'isObject', check: isObject, type: 'object'},
+  {name: 'isFunction', check: isFunction, type: 'function'},
 ];
 
 const exposedMethods = {
@@ -47,6 +49,7 @@ const exposedMethods = {
   isRegExp,
   isDate,
   isObject,
+  isFunction,
 };
 
 export {
@@ -62,6 +65,7 @@ export {
   isRegExp,
   isDate,
   isObject,
+  isFunction,
   isNotNull,
   isBoolean,
   validators,

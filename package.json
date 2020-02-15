@@ -1,6 +1,6 @@
 {
   "name": "whatsme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library to manage object types",
   "main": "lib/index.js",
   "directories": {
